@@ -4,8 +4,7 @@ import 'package:get/get.dart';
 import 'package:szakdoga/views/home_view.dart';
 
 class RegistFormViewController extends GetxController {
-  TextEditingController firstname = TextEditingController();
-  TextEditingController lastname = TextEditingController();
+  TextEditingController usernamme = TextEditingController();
   TextEditingController email = TextEditingController();
   TextEditingController pwd = TextEditingController();
 
@@ -32,28 +31,15 @@ class RegistFormViewController extends GetxController {
     );
   }
   void regist(){
-    if(lastname.text != "" && firstname.text != "" && email.text != "" && pwd.text != ""){
+    if(usernamme.text != "" && email.text != "" && pwd.text != ""){
       Get.to(HomeView());
-    } else if(lastname.text == ""){
+    } else if(usernamme.text == ""){
       Get.dialog(CupertinoAlertDialog(
             title: Text("Hiba"),
             content: Text("Nem adtad meg a vezetékneved"),
             actions: [
               CupertinoDialogAction(
                 child: Text("Vissza"),
-                onPressed: () {
-                  Get.back();
-                },
-              )
-            ],
-          ));
-    } else if(firstname.text == ""){
-      Get.dialog(CupertinoAlertDialog(
-            title: Text("Hiba"),
-            content: Text("Nem adtad meg a keresztneved"),
-            actions: [
-              CupertinoDialogAction(
-                child: Text("ok"),
                 onPressed: () {
                   Get.back();
                 },

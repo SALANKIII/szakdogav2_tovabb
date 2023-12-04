@@ -42,22 +42,11 @@ class RegistFormView extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                     child: TextField(
-                      controller: controller.lastname,
+                      controller: controller.usernamme,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        label: Text("Vezetéknév"),
-                        hintText: "Add meg a vezetékneved",
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
-                    child: TextField(
-                      controller: controller.firstname,
-                      decoration: InputDecoration(
-                        border: OutlineInputBorder(),
-                        label: Text("Keresztnév"),
-                        hintText: "Add meg a keresztneved",
+                        label: Text("Becenév"),
+                        hintText: "Add meg a beceneved",
                       ),
                     ),
                   ),

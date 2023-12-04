@@ -25,7 +25,7 @@ class Exercise {
   factory Exercise.fromJson(Map<String, dynamic> json){
     return Exercise(ename: json['ename'] as String,
      category: json['category'] as String,
-      sets: json['category'] as int,
+      sets: json['sets'] as int,
       repetitions: json['repetitions'] as int,
       weight: json['weight'] as double
       );

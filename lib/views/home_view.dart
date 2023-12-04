@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:szakdoga/views/bmi_view.dart';
 import 'package:szakdoga/views/calendar_view%20copy.dart';
-import 'package:szakdoga/views/calendar_view.dart';
 
 import 'workoutplanview.dart';
 

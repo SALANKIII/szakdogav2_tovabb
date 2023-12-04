@@ -1,14 +1,12 @@
 class User {
-  String firstname;
-  String lastname;
+  String usernamme;
   String pwd;
   String email;
   DateTime date;
   bool gender;
   User({
     required this.email,
-    required this.firstname,
-    required this.lastname,
+    required this.usernamme,
     required this.pwd,
     required this.date,
     required this.gender,
